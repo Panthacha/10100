@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Panthacha Sukdib</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .edu-card {
+            background: linear-gradient(135deg, #F5F0FF 0%, #F0F8FF 100%);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(176, 224, 230, 0.35);
+        }
+
+        .edu-card h3 {
+            color: #6A5ACD;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .school-name {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        /* ⭐ จุดที่แก้หลัก ๆ อยู่ตรงนี้ */
+        .edu-image {
+            width: 100%;
+            max-height: 220px;
+            object-fit: contain;   /* แสดงรูปเต็ม ไม่ตัด */
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .gpa {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 25px;
+            background: linear-gradient(135deg, #FF69B4, #FF1493);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .education-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">PANTHACHA SUKDIB</div>
+
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-overlay" id="navOverlay"></div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i>About me</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-address-book"></i>Contact</a></li>
+                <li><a href="education.html" class="nav-link active"><i class="fas fa-graduation-cap"></i>Education</a></li>
+                <li><a href="hobbies.html" class="nav-link"><i class="fas fa-heart"></i>Hobbies</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page active">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-grid">
+
+                <div class="edu-card">
+                    <h3>ELEMENTARY SCHOOL</h3>
+                    <div class="school-name">Anubanwatkohyai School</div>
+                    <img src="image/elem.jpg" alt="Elementary School" class="edu-image">
+                    <div class="gpa">GPAX: 4.00</div>
+                </div>
+
+                <div class="edu-card">
+                    <h3>JUNIOR HIGH SCHOOL</h3>
+                    <div class="school-name">Thawaranukul School</div>
+                    <img src="image/junior.jpg" alt="Junior High School" class="edu-image">
+                    <div class="gpa">GPAX: 3.27</div>
+                </div>
+
+                <div class="edu-card">
+                    <h3>SENIOR HIGH SCHOOL</h3>
+                    <div class="school-name">Thawaranukul School</div>
+                    <img src="image/senior.jpg" alt="Senior High School" class="edu-image">
+                    <div class="gpa">GPAX: 3.17</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
